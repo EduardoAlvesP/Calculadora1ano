@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="shortcut icon" href="Imagens/iconecalc.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>CALCULADORA</h1>
+        </header>
+        <main>
+            <form name= "calc">
+                <input type= "text" name ="display" id="display" readonly>
+
+                <input type = "button" name="um" value="1" onclick="calc.display.value += 1">
+                <input type = "button" name="dois" value="2" onclick="calc.display.value +=2">
+                <input type = "button" name="soma" value="+" onclick="calc.display.value +=' ' + '+' + ' '">
+
+                <input type = "button" name="3" value="3" onclick="calc.display.value += 3">
+                <input type = "button" name="4" value="4" onclick="calc.display.value += 4">  
+                <input type = "button" name="subtracao" value="-" onclick="calc.display.value += ' '+'-'+' '">		
+
+                <input type = "button" name="cinco" value="5" onclick="calc.display.value += 5">
+                <input type = "button" name="seis" value="6" onclick="calc.display.value += 6">
+                <input type = "button" name="divisão" value="/" onclick="calc.display.value += ' '+'/'+' '">	    
+
+                <input type = "button" name="sete" value="7" onclick="calc.display.value += 7">
+                <input type = "button" name="oito" value="8" onclick="calc.display.value += 8">             
+                <input type = "button" name="igual" value="=" onclick="calc.display.value = eval(calc.display.value)">
+                
+                <input type = "button" name="nove" value="9" onclick="calc.display.value += 9">   
+                <input type = "button" name="zero" value="0" onclick="calc.display.value += 0">
+                <input type = "button" name="limpar" value="C" id="apagar"onclick="calc.display.value = ''">	
+            </form>
+        </main>
+        <footer>
+            <p>Criado por <a href="https://github.com/EduardoAlvesP" target="_blank">Eduardo Alves</a></p>
+        </footer>
+    </body>
+</html>
